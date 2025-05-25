@@ -1,0 +1,74 @@
+Creating a Voice Cooking Assistant Web App is an exciting idea that combines speech recognition, recipe management, and a user-friendly cooking interface. Here's a full breakdown of required features and a recommended tech stack to help you get started.
+
+✅ Core Features (Updated)
+1. User Interface
+Recipe Search & Display:
+
+Search by recipe name, ingredients, or cuisine.
+
+Show ingredients, instructions, cook time, and servings.
+
+Step-by-Step Cooking Mode:
+
+Full-screen view showing one step at a time.
+
+Large fonts, images, and progress indicator.
+
+Timers for specific steps.
+
+2. Voice Assistant Capabilities
+Voice Commands:
+
+Example: “Next step”, “Repeat that”, “Go back”, “Set a timer for 5 minutes”.
+
+Text-to-Speech (TTS):
+
+The app reads out the current step aloud.
+
+Speech-to-Text (STT):
+
+Users give commands via microphone input instead of buttons.
+
+3. Recipe Management
+Users can:
+
+Browse preloaded or API-fetched recipes.
+
+Submit new recipes via a form (optional).
+
+Mark recipes as "favorites" using local storage (no login required).
+
+⚙️ Tech Stack (Updated)
+Frontend
+Tech	Purpose
+React	Build the UI
+Tailwind CSS	Quick, responsive design
+Web Speech API	Voice input (STT) + output (TTS)
+Framer Motion	Smooth animations and transitions
+React Router	Navigation between views/pages
+Local Storage	Store favorites client-side
+
+Backend (Optional, or light)
+Tech	Purpose
+FastAPI or Node.js (Express)	API for recipes (if storing your own DB)
+MongoDB Atlas (optional)	Store recipes if not using an external API
+Cloudinary / Firebase Storage	Upload and serve recipe images (optional)
+
+Deployment
+Platform	Use Case
+Vercel / Netlify	Frontend hosting
+Render / Railway	Backend API (if needed)
+GitHub Actions	CI/CD and automated builds
+
+📡 Recipe Data Source Options
+Option 1: Use a Recipe API (No backend needed initially)
+
+Spoonacular API
+
+Edamam Recipe API
+
+Option 2: Use your own backend
+
+Upload and store custom recipes via a form.
+
+Serve via your own FastAPI/Express API.
