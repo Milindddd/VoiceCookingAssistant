@@ -72,3 +72,9 @@ Option 2: Use your own backend
 Upload and store custom recipes via a form.
 
 Serve via your own FastAPI/Express API.
+
+
+Add text-to-speech functionality for reading instructions?
+Implement the timer functionality?
+Add more voice commands?
+Make any UI improvements?
